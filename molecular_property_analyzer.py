@@ -1,0 +1,14 @@
+import rdkit
+from rdkit import Chem
+from rdkit.Chem import Descriptors
+
+smiles = ["CCO", "c1ccccc1O", "CCN(CC)CC"]
+
+for s in smiles:
+    mol = Chem.MolFromSmiles(s)
+    print("SMILES:", s)
+    print("Molecular Weight:", Descriptors.MolWt(mol))
+    print("LogP:", Descriptors.MolLogP(mol))
+    print("HBA:", Descriptors.NumHAcceptors(mol))
+    print("HBD:", Descriptors.NumHDonors(mol))
+    print()
