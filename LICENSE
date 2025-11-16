@@ -1,0 +1,7 @@
+molecular-property-analyzer/
+│
+├── README.md
+├── molecular_property_analyzer.py
+├── example_smiles.txt
+├── requirements.txt
+└── LICENSE
